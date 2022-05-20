@@ -19,12 +19,12 @@ CREATE TABLE `wp_revisr` (
   `event` varchar(42) NOT NULL,
   `user` varchar(60) DEFAULT NULL,
   UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `wp_revisr` WRITE;
 /*!40000 ALTER TABLE `wp_revisr` DISABLE KEYS */;
-INSERT INTO `wp_revisr` VALUES (1,'2022-05-20 07:06:53','Successfully created a new repository.','init','git-test');
+INSERT INTO `wp_revisr` VALUES (1,'2022-05-20 07:06:53','Successfully created a new repository.','init','git-test'),(2,'2022-05-20 07:12:05','Successfully backed up the database.','backup','git-test'),(3,'2022-05-20 07:12:06','Committed <a href=\"https://rashid.webc.in/git-test/wp-admin/admin.php?page=revisr_view_commit&commit=798db52&success=true\">#798db52</a> to the local repository.','commit','git-test'),(4,'2022-05-20 07:12:21','Error pushing changes to the remote repository.','error','git-test'),(5,'2022-05-20 07:13:34','Error pushing changes to the remote repository.','error','git-test'),(6,'2022-05-20 07:16:23','Error pushing changes to the remote repository.','error','git-test'),(7,'2022-05-20 07:49:26','Successfully pushed 2 commits to origin/master.','push','git-test'),(8,'2022-05-20 07:49:26','Sent update request to the webhook.','push','git-test');
 /*!40000 ALTER TABLE `wp_revisr` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
